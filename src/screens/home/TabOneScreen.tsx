@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import { StyleSheet } from 'react-native';
-import Typograph from '../../components/atoms/Typograph';
 
-import { Text, View } from '../../components/Themed';
-import { RootTabScreenProps } from '../../../types';
-import Icon from '../../components/atoms/icon';
+import { View } from '../../components/Themed';
 
-export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
+export default function Home() {
   return (
     <View style={styles.container}>
     {
