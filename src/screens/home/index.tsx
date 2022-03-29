@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet } from 'react-native';
+import ButtonIcon from '../../components/molecules/ButtonIcon';
 
 import { View } from '../../components/Themed';
 
@@ -7,7 +8,7 @@ export default function Home() {
   return (
     <View style={styles.container}>
     {
-    //component aqui
+    <ButtonIcon onPress={() => console.log('opa')}/>
     }
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
     </View>
