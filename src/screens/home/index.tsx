@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet } from 'react-native';
 import ButtonIcon from '../../components/molecules/ButtonIcon';
+import ItemListSelectButton from '../../components/molecules/ItemListSetectButton';
 
 import { View } from '../../components/Themed';
 
@@ -8,7 +9,7 @@ export default function Home() {
   return (
     <View style={styles.container}>
     {
-    <ButtonIcon onPress={() => console.log('opa')}/>
+    <ItemListSelectButton children="terminar o aplicativo"/>
     }
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
     </View>

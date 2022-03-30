@@ -29,6 +29,7 @@ export default {
     gray100: '#F7F7F9',
     gray150: '#F2F2F2',
     gray200: 'rgba(143, 144, 151, 0.5)',
+    gray250: 'rgba(143, 144, 151, 0.4)',
     gray300: 'rgba(156, 163, 175, 1)',
     gray400: '#8F9097',
     gray500: '#6B6D74',
