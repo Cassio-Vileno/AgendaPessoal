@@ -8,7 +8,8 @@ padding-left: 15px ;
 `;
 
 export const Container = styled.TouchableOpacity`
-align-items: center ;
+align-items: center;
+justify-content: space-between ;
 width: 97%;
 height: 75px;
 border-radius:10px;
@@ -16,10 +17,18 @@ flex-direction:row ;
 background-color: ${theme.colors.gray250};
 `;
 
+export const ContainerContent = styled.View`
+flex-direction:row ;
+`;
+
 export const Select = styled.View`
-background-color: ${theme.colors.gray300};
+justify-content:center;
 margin-left: 10px;
-margin-right: 12px;
+margin-right: 10px;
 border-radius: 5px;
-padding: 1px;
+`
+export const TimeContainer = styled.View`
+flex-direction:row;
+align-self: flex-end;
+padding:10px;
 `

@@ -8,4 +8,6 @@ type ButtonCheckedProps = {
 export const Button = styled.TouchableOpacity<ButtonCheckedProps>`
 background-color:${({background}) => background || theme.colors.gray200};
 border-radius:5px;
+height:18px;
+width: 18px ;
 `

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <View style={styles.container}>
     {
-    <ItemListSelectButton children="terminar o aplicativo"/>
+    <ItemListSelectButton start='08:30' end='09:30' children="terminar o aplicativo"/>
     }
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
     </View>

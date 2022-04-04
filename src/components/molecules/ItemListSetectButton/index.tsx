@@ -1,19 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
+import theme from "../../../styles/theme";
 import Typograph from "../../atoms/Typograph";
 import ButtonChecked from "../ButtonChecked";
-import {Container, Select, Text} from "./styles";
+import {Container, ContainerContent, Select, Text, TimeContainer} from "./styles";
 
 interface ItemListSelectButtonProps{
-  children: React.ReactNode
+  children: React.ReactNode;
+  start: string;
+  end: string;
 }
 
-const ItemListSelectButton = ({children}: ItemListSelectButtonProps):JSX.Element => {
+const ItemListSelectButton = ({children, start, end}: ItemListSelectButtonProps):JSX.Element => {
+  const [check, setCheck] = useState(false);
+  
+  function handleCheck() {
+    if(check == true){
+    setCheck(false)
+  }else{
+    setCheck(true)}
+  }
+
   return(
-    <Container>
+    <Container onPress={() => handleCheck()}>
+      <ContainerContent>
       <Select>
-      <ButtonChecked check={true}/>
+      <ButtonChecked check={check}/>
       </Select>
-      <Typograph fontSize={20} children={children}/>
+      <Typograph textDecoration={check ? 'line-through' : 'none'}  color={check ? theme.colors.gray300 : theme.colors.white} fontSize={20} children={children}/>
+      </ContainerContent>
+      <TimeContainer>
+      <Typograph color={theme.colors.gray300} children={start}/>
+      <Typograph color={theme.colors.gray300} children={' as '}/>
+      <Typograph color={theme.colors.gray300} children={end}/>
+      </TimeContainer>
     </Container>
   )
 }

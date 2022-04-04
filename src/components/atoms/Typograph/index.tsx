@@ -7,12 +7,13 @@ interface typographProps {
   fontSize?: number;
   color?: string;
   weight?: number;
+  textDecoration?: string
   children: React.ReactNode
 }
  
-const Typograph = ({children, fontFamily, fontSize, weight, color}: typographProps): JSX.Element => {
+const Typograph = ({children, fontFamily, fontSize, weight, color, textDecoration}: typographProps): JSX.Element => {
    return (
-      <Text fontFamily={fontFamily} fontSize={fontSize} weight={weight} color={color}>
+      <Text textDecoration={textDecoration} fontFamily={fontFamily} fontSize={fontSize} weight={weight} color={color}>
       {children}
       </Text>
    );

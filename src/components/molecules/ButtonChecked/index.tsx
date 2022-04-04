@@ -11,9 +11,9 @@ interface buttonCheckedProps {
 const ButtonChecked = ({check}: buttonCheckedProps): JSX.Element => {
    return (
       <Button background={ check ? theme.colors.success : theme.colors.gray200 }>
-        <Icon name='check' color={theme.colors.white} size={20}/>
+        { check ? (<Icon name='check' color={theme.colors.white} size={20}/>): null }
       </Button>
    );
  }
  
- export default ButtonChecked
+ export default ButtonChecked;
