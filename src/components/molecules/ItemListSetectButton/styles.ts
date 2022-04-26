@@ -11,7 +11,7 @@ export const Container = styled.TouchableOpacity`
 align-items: center;
 justify-content: space-between ;
 width: 97%;
-height: 75px;
+min-height: 75px;
 border-radius:10px;
 flex-direction:row ;
 background-color: ${theme.colors.gray250};
@@ -19,6 +19,7 @@ background-color: ${theme.colors.gray250};
 
 export const ContainerContent = styled.View`
 flex-direction:row ;
+width: 70%;
 `;
 
 export const Select = styled.View`

@@ -1,17 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { StyleSheet } from 'react-native';
-import ButtonIcon from '../../components/molecules/ButtonIcon';
-import ItemListSelectButton from '../../components/molecules/ItemListSetectButton';
 
 import { View } from '../../components/Themed';
 
 export default function Home() {
   return (
     <View style={styles.container}>
-    {
-    <ItemListSelectButton start='08:30' end='09:30' children="terminar o aplicativo"/>
-    }
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+  
+      <View style={styles.separator} lightColor="#eee" darkColor="#ffffff0" />
     </View>
   );
 }
@@ -19,8 +15,9 @@ export default function Home() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection:'row',
+    padding: 10,
+    justifyContent: 'space-between'
   },
   title: {
     fontSize: 20,
